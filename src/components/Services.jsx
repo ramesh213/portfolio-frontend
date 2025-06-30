@@ -19,7 +19,7 @@ const Services = () => {
       <ServiceCard 
       title='Manual Testing' 
       logo={manualImg}
-      desc="I perform hands-on testing to identify bugs, verify functionality, and ensure a smooth user experience — all from a real user’s perspective. No scripts, just pure logic and attention to detail."/>
+      desc="I perform hands-on testing to identify bugs, verify functionality, and ensure a smooth user experience — all from a real user’s perspective."/>
       <ServiceCard 
       title='Automation Testing' 
       logo={automationImg} 
