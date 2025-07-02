@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Project = ({ imageUrl, title, description, technologies, reverse, sourceCodeUrl }) => {
+const Project = ({ imageUrl, title, description, technologies, reverse, sourceCodeUrl, projectUrl }) => {
   return (
     <div className={`flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'}  mb-16 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300`}>
       {/* Image Side */}
@@ -31,19 +31,47 @@ const Project = ({ imageUrl, title, description, technologies, reverse, sourceCo
           </div>
         </div>
         
-        <div className="flex space-x-3 mt-6">
-          <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">
-            Live Demo
-          </button>
+        {/* <div className="flex space-x-3 mt-6">
+         
           <a 
             href={sourceCodeUrl} 
             target="_blank" 
             rel="noopener noreferrer"
-            className="px-4 py-2 border border-gray-300 text-gray-700 rounded hover:bg-gray-50 transition-colors"
+            className="px-4 py-2 border bg-blue-600 text-white rounded hover:bg-gray-50 hover:text-black transition-colors"
+          >
+            Live Demo
+          </a>
+           <a 
+            href={sourceCodeUrl} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="px-4 py-2 border bg-blue-600 text-white rounded hover:bg-gray-50 hover:text-black transition-colors"
           >
             Source Code
           </a>
-        </div>
+        </div> */}
+         <div className="flex space-x-3 mt-6">
+            { projectUrl ? (
+              <a 
+                href={projectUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="px-4 py-2 border bg-blue-600 text-white rounded hover:bg-gray-50 hover:text-black transition-colors"
+              >
+                Live Demo
+              </a>
+            ) : sourceCodeUrl ? (
+              <a 
+                href={sourceCodeUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="px-4 py-2 border bg-blue-600 text-white rounded hover:bg-gray-50 hover:text-black transition-colors"
+              >
+                Source Code
+              </a>
+            ): null }
+          </div>
+
       </div>
     </div>
   );
