@@ -2,7 +2,7 @@
 import React from "react";
 import { FaFacebook, FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 import heroImage from "../assets/images/hero-img.png";
-import resume from "../assets/resume.pdf";
+import resume from "../assets/rameshCV.pdf";
 import { ReactTyped } from "react-typed";
 
 const Home = () => {
