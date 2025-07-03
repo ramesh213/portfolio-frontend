@@ -33,7 +33,7 @@ const Education = () => {
       {/* GPA and Passed Year */}
       <div className='ml-16 mt-8 font-exo max-md:ml-2'>
         <h1 className='text-lg'>GPA- <span className='text-yellow-400'>3.2</span></h1>
-        <h1 className='text-lg'>Passed Year- <span className='text-yellow-400'>2024</span></h1>
+        <h1 className='text-lg'>Graduation Year- <span className='text-yellow-400'>2024</span></h1>
       </div>
     </>
   );
